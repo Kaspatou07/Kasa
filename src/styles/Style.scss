@@ -1,0 +1,1242 @@
+$textcolor: rgba(255, 96, 96, 1);
+$trait-couleur: rgba(255, 96, 96, 1);
+$trait-epaisseur: 2px;
+$Gallerybackground: rgba(246, 246, 246, 1);
+$main-color: rgba(255, 96, 96, 1);
+$Footerbackground: black;
+
+* {
+    font-family: 'Montserrat';
+}
+
+
+body {
+    padding-top: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.Maincontainer {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// Header
+.styleHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 1240px;
+
+}
+
+.styleNav {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $textcolor;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Montserrat;
+    border-bottom: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 20px;
+
+    &.active {
+        border-bottom: $trait-epaisseur solid $trait-couleur;
+    }
+}
+
+// Gallery
+
+.SectionBanner {
+    margin-bottom: -80px;
+
+    img {
+        width: 1240px;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(70%);
+    }
+
+    h1 {
+        position: relative;
+        top: -180px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 48px;
+        font-family: Montserrat;
+        text-align: center;
+    }
+}
+
+
+.Gallery {
+    width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-height: 710px;
+    overflow-y: auto;
+    column-gap: 50px;
+    row-gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    background-color: $Gallerybackground;
+}
+
+.Card {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10px;
+
+    img {
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        position: absolute;
+        left: 20px;
+        bottom: -20px;
+        color: white;
+        width: 300px;
+        height: 52px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+
+
+// Footer
+
+
+.styleFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 210px;
+    margin-top: 50px;
+    overflow: hidden;
+    background-color: $Footerbackground;
+    width: 100%;
+
+
+    img {
+        width: 122px;
+        height: 40px;
+    }
+
+    h2 {
+        width: 513px;
+        height: 46px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: white;
+        text-align: center;
+
+    }
+
+}
+
+
+
+// ficheLogement
+
+.ficheLogement {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .Sectionlogements {
+        width: 1240px;
+
+
+
+        .Informationslogements {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 1240px;
+        }
+
+        .TitreAnnonce {
+            display: flex;
+            flex-direction: column;
+            width: 635px;
+            height: 77px;
+            position: relative;
+            left: -300px;
+            top: 10px;
+
+            h2 {
+                color: $textcolor;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 51px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: black;
+                margin-top: 0px;
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .tag {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: -370px;
+            top: 30px;
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                row-gap: 20px;
+                list-style-type: none;
+                padding-left: 0px;
+
+                li {
+                    background-color: $main-color;
+                    border-radius: 10px;
+                    color: white;
+                    width: 115px;
+                    height: 22px;
+                    text-align: center;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        .hote {
+            width: 167px;
+            height: 64px;
+            position: relative;
+            top: -120px;
+            left: 535px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: $main-color;
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: right;
+                margin-right: 10px;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: rgba(196, 196, 196, 1);
+            }
+        }
+
+
+        .Rating {
+            position: relative;
+            top: -100px;
+            left: 530px;
+            width: 196px;
+
+            p {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+            }
+        }
+
+        .CollapseAlign {
+            position: relative;
+            top: -90px;
+            margin-top: 0px;
+        }
+    }
+
+    .styleFooter {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+// Carousel
+
+.carousel {
+
+    height: 415px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    img {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+    }
+
+    .arrow_left {
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        left: 100px;
+
+
+        img {
+            width: 96px;
+            height: 120px;
+        }
+    }
+
+    .arrow_right {
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        right: 100px;
+
+        img {
+            width: 96px;
+            height: 120px;
+        }
+    }
+
+
+    .photo-counter {
+        color: white;
+        position: relative;
+        top: -35px;
+        left: 50%;
+    }
+
+
+
+}
+
+
+// Collapse
+
+
+.collapse {
+    width: 1240px;
+
+
+
+    .collapse-header {
+        background-color: $main-color;
+        border-radius: 10px;
+        height: 52px;
+        width: 582px;
+
+
+
+        h3 {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px 10px 10px;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            .collapse-icon {
+                width: 32px;
+                transition: transform 200ms;
+                height: 32px;
+
+            }
+
+        }
+    }
+
+    .collapse-content {
+        background: rgba(246, 246, 246, 1);
+        color: $main-color;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        width: 582px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 500ms ease-in-out;
+
+
+
+        p {
+            white-space: pre-line;
+            text-align: left;
+            padding: 20px 20px 20px 20px;
+            margin-top: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 20px 20px 20px 20px;
+            margin-top: 0px;
+
+        }
+    }
+}
+
+.CollapseAlign {
+    display: flex;
+    flex-direction: row;
+    width: 1240px;
+    margin-top: -50px;
+    justify-content: space-between;
+
+}
+
+.collapse.closed {
+    width: 582px;
+}
+
+.collapse.open {
+    width: 582px;
+}
+
+
+
+// Animation pour l'icone et le contenu du collapse
+.open {
+    .collapse-icon {
+        transform: rotate(0deg);
+    }
+
+    .collapse-content {
+        max-height: 1000px;
+
+    }
+}
+
+.closed {
+    .collapse-icon {
+        transform: rotate(90deg);
+    }
+
+    .collapse-content {
+        max-height: 0;
+    }
+}
+
+
+// Page About
+
+.CollapseAbout {
+
+    width: 1023px;
+
+
+    .collapse-header {
+        width: 1023px;
+
+    }
+
+    .collapse.open {
+        width: 1023px;
+    }
+
+    .collapse.closed {
+        width: 1023px;
+    }
+
+    .collapse-content {
+        width: 1023px;
+    }
+
+}
+
+// Page 404
+
+
+.Style404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 411px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $main-color;
+        width: 597px;
+        height: 263px;
+        margin-top: 50px;
+    }
+
+    p {
+        color: $main-color;
+        width: 872px;
+        height: 51px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    Link {
+        width: 284px;
+        height: 26px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    a {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+/****** Media queries ***********/
+/* Small devices and medium (tablets, between 350px and 800px) */
+
+@media (min-width: 350px) and (max-width: 800px) {
+    body {
+        padding-top: 30px;
+        height: 100%;
+
+
+    }
+
+    .Maincontainer {
+        width: 375px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    // Home
+    // Header
+    .styleHeader {
+        width: 335px;
+        margin-left: 3px;
+
+        img {
+            width: 145px;
+            height: 46px;
+
+        }
+
+        .styleNav {
+            width: 190px;
+
+        }
+
+        a {
+            font-size: 12px;
+            text-align: right;
+            text-transform: uppercase;
+
+
+
+
+            &.active {
+                border-bottom: $trait-epaisseur solid $trait-couleur;
+            }
+        }
+    }
+
+    .SectionBanner {
+        margin-bottom: 30px;
+        width: 335px;
+        height: 111px;
+        margin-left: 3px;
+
+
+        img {
+            width: 335px;
+            height: 111px;
+            border-radius: 10px;
+            margin-left: 4px;
+
+        }
+
+        h1 {
+            width: 217px;
+            height: 48px;
+            font-size: 24px;
+            text-align: left;
+            top: -100px;
+            left: 30px;
+            line-height: 24px;
+
+        }
+    }
+
+    .Gallery {
+        background-color: white;
+        width: 335px;
+        height: 805px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+
+        .Card {
+            width: 335px;
+            height: 255px;
+            border-radius: 10px;
+            margin-left: -10px;
+        }
+
+        img {
+            width: 335px;
+            height: 255px;
+            border-radius: 10px;
+            margin-left: 0px;
+
+        }
+
+
+    }
+
+    .styleFooter {
+        margin-top: 30px;
+        width: 375px;
+        height: 209px;
+
+        h2 {
+            width: 133.59px;
+            height: 46px;
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+    }
+
+    // About
+
+
+    .aboutBanner {
+        margin-bottom: 30px;
+        width: 335px;
+        height: 111px;
+        margin-left: 0px;
+
+        h1 {
+            display: none;
+        }
+
+
+        img {
+            width: 335px;
+            height: 111px;
+            border-radius: 10px;
+            margin-left: 0px;
+
+        }
+
+    }
+
+
+    .CollapseAbout {
+        width: 335px;
+        border-radius: 5px;
+
+
+
+        .collapse-header {
+            width: 100%;
+            height: 30px;
+
+
+            h3 {
+                font-size: 13px;
+                line-height: 18px;
+                height: 1px;
+
+                .collapse-icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+
+        }
+
+        .collapse.open {
+            width: 335px;
+
+        }
+
+        .collapse.closed {
+            width: 335px;
+
+        }
+
+        .collapse-content {
+            width: 335px;
+
+        }
+    }
+
+    // ficheLogement
+
+    .ficheLogement {
+        overflow: hidden;
+        width: inherit;
+
+        .styleFooter {
+            margin-top: 30px;
+        }
+
+        .Sectionlogements {
+            width: 335px;
+
+            .carousel {
+                width: 335px;
+                height: 225px;
+
+                img {
+                    width: 335px;
+                    height: 225px;
+                }
+
+                .arrow_left {
+                    left: 35px;
+                    top: -0px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                .arrow_right {
+                    left: -35px;
+                    top: -0px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                .photo-counter {
+                    display: none;
+                }
+
+            }
+
+            .Informationslogements {
+                width: 335px;
+            }
+
+
+            .TitreAnnonce {
+                width: 335px;
+                height: 73px;
+                left: 0px;
+
+                h2 {
+                    width: 335px;
+                    height: 46px;
+                    font-size: 18px;
+                    text-align: left;
+                }
+
+                p {
+                    width: 323px;
+                    height: 22px;
+                    font-size: 14px;
+                    text-align: left;
+
+
+                }
+            }
+
+
+            .tag {
+                left: -20px;
+                top: 10px;
+                width: 300px;
+
+
+
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    row-gap: 20px;
+
+
+                    li {
+
+                        width: 84px;
+                        height: 18px;
+                        font-size: 10px;
+                        font-weight: 500;
+                        line-height: 14px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        overflow: hidden;
+
+                    }
+                }
+            }
+
+            .hote {
+                width: 135px;
+                height: 33px;
+                left: 106px;
+                top: 20px;
+
+                p {
+                    width: 80px;
+                    height: 33px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: righ
+                }
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+            }
+
+
+            .Rating {
+                left: -65px;
+                top: -15px;
+
+
+                p {
+                    width: 98px;
+                    column-gap: 5px;
+                }
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+
+
+            }
+
+
+
+            .logementCollapse {
+                width: 335px;
+                flex-direction: column;
+                margin-top: 0px;
+                top: -20px;
+
+
+                .collapse-header {
+                    width: 100%;
+                    height: 30px;
+
+
+                    h3 {
+                        font-size: 13px;
+                        line-height: 18px;
+                        padding: 0px 10px 0px 10px;
+
+
+                        .collapse-icon {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+
+                }
+
+                .collapse.open {
+                    width: 335px;
+
+                }
+
+                .collapse.closed {
+                    width: 335px;
+
+                }
+
+                .collapse-content {
+                    width: 335px;
+
+                }
+            }
+
+
+        }
+    }
+
+
+    // Page 404
+
+    .Style404 {
+
+
+        h2 {
+            width: 198px;
+            height: 99px;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 137px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        p {
+            width: 260px;
+            height: 52px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+
+        a {
+            width: 221px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+}
+
+
+
+/* Medium devices and large (tablets, between 500px and 1300px) */
+@media (min-width: 800px) and (max-width: 1300px) {
+    .Maincontainer {
+        max-width: 900px;
+        height: 100%;
+        overflow: hidden;
+
+        .styleHeader {
+            width: 800px;
+        }
+
+        .sectionGallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .SectionBanner {
+                width: 800px;
+
+                img {
+                    width: 800px;
+                }
+
+            }
+
+            .Gallery {
+                width: 800px;
+            }
+        }
+
+        .styleFooter {
+            width: 900px;
+        }
+
+        .aboutBanner {
+            width: 800px;
+
+            img {
+                width: 800px;
+            }
+        }
+
+        .CollapseAbout {
+            width: 800px;
+
+            .collapse-header {
+                width: 800px;
+            }
+
+            .collapse.open {
+                width: 800px;
+
+            }
+
+            .collapse.closed {
+                width: 800px;
+
+            }
+
+            .collapse-content {
+                width: 800px;
+
+            }
+        }
+    }
+
+    .ficheLogement {
+        width: 900px;
+
+        .styleHeader {
+            width: 800px;
+        }
+
+        .Sectionlogements {
+            width: 800px;
+
+            .CollapseAlign {
+                width: 800px;
+            }
+
+            .carousel {
+                img {
+                    width: 800px;
+                    height: 375px;
+                }
+
+                .arrow_right {
+                    img {
+                        width: 80px;
+                        height: 100px;
+                    }
+                }
+
+                .arrow_left {
+                    img {
+                        width: 80px;
+                        height: 100px;
+                    }
+                }
+            }
+
+            .Informationslogements {
+                width: 800px;
+
+
+
+                .logementCollapse {
+                    margin-top: 0px;
+
+
+
+
+                    .collapse-header {
+                        width: 380px;
+                        height: 35px;
+
+
+
+                        h3 {
+                            font-size: 13px;
+                            line-height: 18px;
+                            padding: 3px 10px 0px 10px;
+
+
+                            .collapse-icon {
+                                width: 28px;
+                                height: 28px;
+
+                            }
+                        }
+
+
+                    }
+
+                    .collapse.open {
+                        width: 380px;
+
+                    }
+
+                    .collapse.closed {
+                        width: 380px;
+
+                    }
+
+                    .collapse-content {
+                        width: 380px;
+
+                    }
+                }
+            }
+
+
+            .TitreAnnonce {
+                width: 400px;
+                left: -200px;
+
+            }
+
+
+            .tag {
+                left: -200px;
+                width: 400px;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    row-gap: 20px;
+
+                    li {
+                        height: 22px;
+                    }
+                }
+            }
+
+            .hote {
+                left: 320px;
+            }
+
+            .Rating {
+                left: 310px;
+            }
+        }
+
+        .styleFooter {
+            width: 900px;
+        }
+
+    }
+
+
+    // Page 404
+
+    .Style404 {
+
+
+        h2 {
+            width: 250px;
+            height: 99px;
+            font-size: 120px;
+            font-weight: 700;
+            line-height: 137px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        p {
+            width: 260px;
+            height: 52px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+
+        a {
+            width: 221px;
+            height: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+
+
+}
