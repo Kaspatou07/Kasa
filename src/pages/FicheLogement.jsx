@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Style.scss';
@@ -22,24 +22,27 @@ const FicheLogement = () => {
     }
   }, []);
 
+  const navigate = useNavigate();
   useEffect(() => {
     
     if (logements.length > 0) {
+      // Vérifie si l'id passé dans l'URL correspond à un logement existant
       const isValidId = logements.some((item) => item.id === id);
 
       if (!isValidId) {
         
-        window.location='/404';
+        navigate('/404');
       }
     }
-  }, [id, logements]);
+  }, [id, logements, navigate]);
  
   
+  // Memorise le logement correspondant à l'ID pour éviter des calculs inutiles
   const logement = useMemo(() => logements.find((item) => item.id === id),[logements, id]);
 
 
 
-// Pour le Ranking
+// Pour le Ranking : crée un tableau de 5 étoiles en fonction de la note du logement
   const ratingStars = useMemo(() => Array.from({ length: 5 }, (_, index) => (
     <img
       key={index}

@@ -44,6 +44,7 @@ a {
   font-weight: 500;
   margin-left: 20px;
 }
+
 a.active {
   border-bottom: 2px solid rgb(255, 96, 96);
 }
@@ -51,14 +52,16 @@ a.active {
 .SectionBanner {
   margin-bottom: -80px;
 }
+
 .SectionBanner img {
   width: 1240px;
   height: 223px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 25px;
   filter: brightness(70%);
 }
+
 .SectionBanner h1 {
   position: relative;
   top: -180px;
@@ -77,7 +80,7 @@ a.active {
   max-height: 710px;
   overflow-y: auto;
   -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   row-gap: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -92,13 +95,15 @@ a.active {
   position: relative;
   margin-left: 10px;
 }
+
 .Card img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 340px;
   height: 340px;
   border-radius: 10px;
 }
+
 .Card h2 {
   position: absolute;
   left: 20px;
@@ -116,6 +121,7 @@ a.active {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .Card:before {
   content: "";
   position: absolute;
@@ -139,10 +145,12 @@ a.active {
   background-color: black;
   width: 100%;
 }
+
 .styleFooter img {
   width: 122px;
   height: 40px;
 }
+
 .styleFooter h2 {
   width: 513px;
   height: 46px;
@@ -163,9 +171,11 @@ a.active {
   justify-content: center;
   overflow: hidden;
 }
+
 .ficheLogement .Sectionlogements {
   width: 1240px;
 }
+
 .ficheLogement .Sectionlogements .Informationslogements {
   display: flex;
   flex-direction: column;
@@ -173,6 +183,7 @@ a.active {
   align-items: center;
   width: 1240px;
 }
+
 .ficheLogement .Sectionlogements .TitreAnnonce {
   display: flex;
   flex-direction: column;
@@ -182,6 +193,7 @@ a.active {
   left: -300px;
   top: 10px;
 }
+
 .ficheLogement .Sectionlogements .TitreAnnonce h2 {
   color: rgb(255, 96, 96);
   font-size: 36px;
@@ -194,6 +206,7 @@ a.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .ficheLogement .Sectionlogements .TitreAnnonce p {
   font-size: 18px;
   font-weight: 500;
@@ -204,6 +217,7 @@ a.active {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .ficheLogement .Sectionlogements .tag {
   display: flex;
   flex-direction: row;
@@ -214,6 +228,7 @@ a.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .ficheLogement .Sectionlogements .tag ul {
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +237,7 @@ a.active {
   list-style-type: none;
   padding-left: 0px;
 }
+
 .ficheLogement .Sectionlogements .tag ul li {
   background-color: rgb(255, 96, 96);
   border-radius: 10px;
@@ -234,6 +250,7 @@ a.active {
   text-overflow: ellipsis;
   padding-top: 5px;
 }
+
 .ficheLogement .Sectionlogements .hote {
   width: 167px;
   height: 64px;
@@ -246,6 +263,7 @@ a.active {
   align-items: center;
   color: rgb(255, 96, 96);
 }
+
 .ficheLogement .Sectionlogements .hote p {
   font-size: 18px;
   font-weight: 500;
@@ -254,28 +272,33 @@ a.active {
   text-align: right;
   margin-right: 10px;
 }
+
 .ficheLogement .Sectionlogements .hote img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   background: rgb(196, 196, 196);
 }
+
 .ficheLogement .Sectionlogements .Rating {
   position: relative;
   top: -100px;
   left: 530px;
   width: 196px;
 }
+
 .ficheLogement .Sectionlogements .Rating p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .ficheLogement .Sectionlogements .CollapseAlign {
   position: relative;
   top: -90px;
   margin-top: 0px;
 }
+
 .ficheLogement .styleFooter {
   margin-top: 0px;
 }
@@ -288,12 +311,14 @@ a.active {
   align-items: center;
   justify-content: center;
 }
+
 .carousel img {
   width: 1240px;
   height: 415px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .carousel .arrow_left {
   background: none;
   border: none;
@@ -302,10 +327,12 @@ a.active {
   position: relative;
   left: 100px;
 }
+
 .carousel .arrow_left img {
   width: 96px;
   height: 120px;
 }
+
 .carousel .arrow_right {
   background: none;
   border: none;
@@ -314,10 +341,12 @@ a.active {
   position: relative;
   right: 100px;
 }
+
 .carousel .arrow_right img {
   width: 96px;
   height: 120px;
 }
+
 .carousel .photo-counter {
   color: white;
   position: relative;
@@ -328,12 +357,14 @@ a.active {
 .collapse {
   width: 1240px;
 }
+
 .collapse .collapse-header {
   background-color: rgb(255, 96, 96);
   border-radius: 10px;
   height: 52px;
   width: 582px;
 }
+
 .collapse .collapse-header h3 {
   color: white;
   display: flex;
@@ -347,11 +378,13 @@ a.active {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .collapse .collapse-header h3 .collapse-icon {
   width: 32px;
   transition: transform 200ms;
   height: 32px;
 }
+
 .collapse .collapse-content {
   background: rgb(246, 246, 246);
   color: rgb(255, 96, 96);
@@ -365,12 +398,14 @@ a.active {
   overflow: hidden;
   transition: max-height 500ms ease-in-out;
 }
+
 .collapse .collapse-content p {
   white-space: pre-line;
   text-align: left;
   padding: 20px 20px 20px 20px;
   margin-top: 0px;
 }
+
 .collapse .collapse-content ul {
   list-style-type: none;
   padding: 20px 20px 20px 20px;
@@ -396,6 +431,7 @@ a.active {
 .open .collapse-icon {
   transform: rotate(0deg);
 }
+
 .open .collapse-content {
   max-height: 1000px;
 }
@@ -403,6 +439,7 @@ a.active {
 .closed .collapse-icon {
   transform: rotate(90deg);
 }
+
 .closed .collapse-content {
   max-height: 0;
 }
@@ -410,15 +447,19 @@ a.active {
 .CollapseAbout {
   width: 1023px;
 }
+
 .CollapseAbout .collapse-header {
   width: 1023px;
 }
+
 .CollapseAbout .collapse.open {
   width: 1023px;
 }
+
 .CollapseAbout .collapse.closed {
   width: 1023px;
 }
+
 .CollapseAbout .collapse-content {
   width: 1023px;
 }
@@ -428,6 +469,7 @@ a.active {
   flex-direction: column;
   align-items: center;
 }
+
 .Style404 h2 {
   font-size: 288px;
   font-weight: 700;
@@ -439,6 +481,7 @@ a.active {
   height: 263px;
   margin-top: 50px;
 }
+
 .Style404 p {
   color: rgb(255, 96, 96);
   width: 872px;
@@ -449,6 +492,7 @@ a.active {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .Style404 Link {
   width: 284px;
   height: 26px;
@@ -458,6 +502,7 @@ a.active {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .Style404 a {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -471,42 +516,51 @@ a.active {
     padding-top: 30px;
     height: 100%;
   }
+
   .Maincontainer {
     width: 375px;
     height: 100%;
     overflow: hidden;
   }
+
   .styleHeader {
     width: 335px;
     margin-left: 3px;
   }
+
   .styleHeader img {
     width: 145px;
     height: 46px;
   }
+
   .styleHeader .styleNav {
     width: 190px;
   }
+
   .styleHeader a {
     font-size: 12px;
     text-align: right;
     text-transform: uppercase;
   }
+
   .styleHeader a.active {
     border-bottom: 2px solid rgb(255, 96, 96);
   }
+
   .SectionBanner {
     margin-bottom: 30px;
     width: 335px;
     height: 111px;
     margin-left: 3px;
   }
+
   .SectionBanner img {
     width: 335px;
     height: 111px;
     border-radius: 10px;
     margin-left: 4px;
   }
+
   .SectionBanner h1 {
     width: 217px;
     height: 48px;
@@ -516,6 +570,7 @@ a.active {
     left: 30px;
     line-height: 24px;
   }
+
   .Gallery {
     background-color: white;
     width: 335px;
@@ -524,23 +579,27 @@ a.active {
     padding-bottom: 0px;
     padding-right: 10px;
   }
+
   .Gallery .Card {
     width: 335px;
     height: 255px;
     border-radius: 10px;
     margin-left: -10px;
   }
+
   .Gallery img {
     width: 335px;
     height: 255px;
     border-radius: 10px;
     margin-left: 0px;
   }
+
   .styleFooter {
     margin-top: 30px;
     width: 375px;
     height: 209px;
   }
+
   .styleFooter h2 {
     width: 133.59px;
     height: 46px;
@@ -549,115 +608,142 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
+
   .aboutBanner {
     margin-bottom: 30px;
     width: 335px;
     height: 111px;
     margin-left: 0px;
   }
+
   .aboutBanner h1 {
     display: none;
   }
+
   .aboutBanner img {
     width: 335px;
     height: 111px;
     border-radius: 10px;
     margin-left: 0px;
   }
+
   .CollapseAbout {
     width: 335px;
     border-radius: 5px;
   }
+
   .CollapseAbout .collapse-header {
     width: 100%;
     height: 30px;
   }
+
   .CollapseAbout .collapse-header h3 {
     font-size: 13px;
     line-height: 18px;
     height: 1px;
   }
+
   .CollapseAbout .collapse-header h3 .collapse-icon {
     width: 30px;
     height: 30px;
   }
+
   .CollapseAbout .collapse.open {
     width: 335px;
   }
+
   .CollapseAbout .collapse.closed {
     width: 335px;
   }
+
   .CollapseAbout .collapse-content {
     width: 335px;
   }
+
   .ficheLogement {
     overflow: hidden;
     width: inherit;
   }
+
   .ficheLogement .styleFooter {
     margin-top: 30px;
   }
+
   .ficheLogement .Sectionlogements {
     width: 335px;
   }
+
   .ficheLogement .Sectionlogements .carousel {
     width: 335px;
     height: 225px;
   }
+
   .ficheLogement .Sectionlogements .carousel img {
     width: 335px;
     height: 225px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_left {
     left: 35px;
     top: 0px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_left img {
     width: 24px;
     height: 24px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_right {
     left: -35px;
     top: 0px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_right img {
     width: 24px;
     height: 24px;
   }
+
   .ficheLogement .Sectionlogements .carousel .photo-counter {
     display: none;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements {
     width: 335px;
   }
+
   .ficheLogement .Sectionlogements .TitreAnnonce {
     width: 335px;
     height: 73px;
     left: 0px;
   }
+
   .ficheLogement .Sectionlogements .TitreAnnonce h2 {
     width: 335px;
     height: 46px;
     font-size: 18px;
     text-align: left;
   }
+
   .ficheLogement .Sectionlogements .TitreAnnonce p {
     width: 323px;
     height: 22px;
     font-size: 14px;
     text-align: left;
   }
+
   .ficheLogement .Sectionlogements .tag {
     left: -20px;
     top: 10px;
     width: 300px;
   }
+
   .ficheLogement .Sectionlogements .tag ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     row-gap: 20px;
   }
+
   .ficheLogement .Sectionlogements .tag ul li {
     width: 84px;
     height: 18px;
@@ -668,12 +754,14 @@ a.active {
     text-align: center;
     overflow: hidden;
   }
+
   .ficheLogement .Sectionlogements .hote {
     width: 135px;
     height: 33px;
     left: 106px;
     top: 20px;
   }
+
   .ficheLogement .Sectionlogements .hote p {
     width: 80px;
     height: 33px;
@@ -681,53 +769,65 @@ a.active {
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: righ;
+    text-align: right;
   }
+
   .ficheLogement .Sectionlogements .hote img {
     width: 32px;
     height: 32px;
   }
+
   .ficheLogement .Sectionlogements .Rating {
     left: -65px;
     top: -15px;
   }
+
   .ficheLogement .Sectionlogements .Rating p {
     width: 98px;
     -moz-column-gap: 5px;
-         column-gap: 5px;
+    column-gap: 5px;
   }
+
   .ficheLogement .Sectionlogements .Rating img {
     width: 18px;
     height: 18px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse {
     width: 335px;
     flex-direction: column;
     margin-top: 0px;
     top: -20px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse-header {
     width: 100%;
     height: 30px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse-header h3 {
     font-size: 13px;
     line-height: 18px;
     padding: 0px 10px 0px 10px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse-header h3 .collapse-icon {
     width: 30px;
     height: 30px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse.open {
     width: 335px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse.closed {
     width: 335px;
   }
+
   .ficheLogement .Sectionlogements .logementCollapse .collapse-content {
     width: 335px;
   }
+
   .Style404 h2 {
     width: 198px;
     height: 99px;
@@ -737,6 +837,7 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
+
   .Style404 p {
     width: 260px;
     height: 52px;
@@ -746,6 +847,7 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
+
   .Style404 a {
     width: 221px;
     height: 20px;
@@ -756,6 +858,7 @@ a.active {
     text-align: left;
   }
 }
+
 /* Medium devices and large (tablets, between 500px and 1300px) */
 @media (min-width: 800px) and (max-width: 1300px) {
   .Maincontainer {
@@ -763,125 +866,161 @@ a.active {
     height: 100%;
     overflow: hidden;
   }
+
   .Maincontainer .styleHeader {
     width: 800px;
   }
+
   .Maincontainer .sectionGallery {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .Maincontainer .sectionGallery .SectionBanner {
     width: 800px;
   }
+
   .Maincontainer .sectionGallery .SectionBanner img {
     width: 800px;
   }
+
   .Maincontainer .sectionGallery .Gallery {
     width: 800px;
   }
+
   .Maincontainer .styleFooter {
     width: 900px;
   }
+
   .Maincontainer .aboutBanner {
     width: 800px;
   }
+
   .Maincontainer .aboutBanner img {
     width: 800px;
   }
+
   .Maincontainer .CollapseAbout {
     width: 800px;
   }
+
   .Maincontainer .CollapseAbout .collapse-header {
     width: 800px;
   }
+
   .Maincontainer .CollapseAbout .collapse.open {
     width: 800px;
   }
+
   .Maincontainer .CollapseAbout .collapse.closed {
     width: 800px;
   }
+
   .Maincontainer .CollapseAbout .collapse-content {
     width: 800px;
   }
+
   .ficheLogement {
     width: 900px;
   }
+
   .ficheLogement .styleHeader {
     width: 800px;
   }
+
   .ficheLogement .Sectionlogements {
     width: 800px;
   }
+
   .ficheLogement .Sectionlogements .CollapseAlign {
     width: 800px;
   }
+
   .ficheLogement .Sectionlogements .carousel img {
     width: 800px;
     height: 375px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_right img {
     width: 80px;
     height: 100px;
   }
+
   .ficheLogement .Sectionlogements .carousel .arrow_left img {
     width: 80px;
     height: 100px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements {
     width: 800px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse {
     margin-top: 0px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse-header {
     width: 380px;
     height: 35px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse-header h3 {
     font-size: 13px;
     line-height: 18px;
     padding: 3px 10px 0px 10px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse-header h3 .collapse-icon {
     width: 28px;
     height: 28px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse.open {
     width: 380px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse.closed {
     width: 380px;
   }
+
   .ficheLogement .Sectionlogements .Informationslogements .logementCollapse .collapse-content {
     width: 380px;
   }
+
   .ficheLogement .Sectionlogements .TitreAnnonce {
     width: 400px;
     left: -200px;
   }
+
   .ficheLogement .Sectionlogements .tag {
     left: -200px;
     width: 400px;
   }
+
   .ficheLogement .Sectionlogements .tag ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     row-gap: 20px;
   }
+
   .ficheLogement .Sectionlogements .tag ul li {
     height: 22px;
   }
+
   .ficheLogement .Sectionlogements .hote {
     left: 320px;
   }
+
   .ficheLogement .Sectionlogements .Rating {
     left: 310px;
   }
+
   .ficheLogement .styleFooter {
     width: 900px;
   }
+
   .Style404 h2 {
     width: 250px;
     height: 99px;
@@ -891,6 +1030,7 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
+
   .Style404 p {
     width: 260px;
     height: 52px;
@@ -900,6 +1040,7 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
+
   .Style404 a {
     width: 221px;
     height: 20px;
@@ -909,4 +1050,6 @@ a.active {
     letter-spacing: 0em;
     text-align: center;
   }
-}/*# sourceMappingURL=Style.css.map */
+}
+
+/*# sourceMappingURL=Style.css.map */
